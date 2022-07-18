@@ -1,37 +1,11 @@
-import React, { createContext } from 'react';
-const { Provider, Consumer } = createContext()
+import React from 'react';
+import { useWindowScroll } from './hooks/useWindowScroll'
 
-function ComA () {
+function App () {
+  const [h] = useWindowScroll()
   return (
-    <div>
-      <p>this is ComponentA</p>
-      <ComC />
-    </div>
+    <div style={{height: '2000px'}}>app--{ h }</div>
   )
-}
-
-function ComC () {
-  return (
-    <div>
-      <p>this is ComponentA</p>
-      <Consumer>{ value => value}</Consumer>
-    </div>
-  )
-}
-class App extends React.Component {
-  state = {
-    msg: 'this is msg'
-  }
-  render() {
-    return (
-      <Provider value={this.state.msg}>
-        <div>
-          <p>App</p>
-          <ComA />
-        </div>
-      </Provider>
-    )
-  }
 }
 
 export default App;

@@ -1,0 +1,10 @@
+1、挂载阶段
+componentDidMount
+render
+
+2、更新阶段
+render
+componentDidUpdate
+
+3、卸载阶段
+componentWillUnmount

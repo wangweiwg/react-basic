@@ -1,0 +1,7 @@
+props传值时，可以使用prop-types校验参数
+自react 15.5起，React.PropTypes已移入另一个包中，可以使用prop-types代替
+
+1、函数组件可以通过给组件设置defaultProps 来设置默认属性值
+2、函数组件也可以通过参数结构props时设置默认值
+3、类组件可以通过static defaultProps 来设置默认属性值
+4、类组件也可以通过给组件设置defaultProps属性来设置默认值
