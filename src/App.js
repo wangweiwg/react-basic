@@ -1,11 +1,12 @@
-import React from 'react';
-import { useWindowScroll } from './hooks/useWindowScroll'
+import React from "react";
 
-function App () {
-  const [h] = useWindowScroll()
+function App() {
   return (
-    <div style={{height: '2000px'}}>app--{ h }</div>
-  )
+    <div style={{ height: "2000px" }}>
+      <p>App---{process.env.NODE_ENV}</p>
+      <p>自定义环境：{String(process.env.REACT_APP_NOT_SECRET_CODE)}</p>
+    </div>
+  );
 }
 
 export default App;
