@@ -38,11 +38,12 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.0.3",
-    "@commitlint/config-conventional": "^17.0.3",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
     "husky": ">=7",
     "lint-staged": ">=10",
-    "prettier": "2.7.1"
+    "prettier": "2.7.1",
+    "prettier-eslint": "^15.0.1"
   },
   "husky": {
     "hooks": {
